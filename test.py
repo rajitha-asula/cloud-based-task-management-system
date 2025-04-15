@@ -42,3 +42,24 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+'''
+
+Run the following command in the terminal once it is live
+curl -X POST http://127.0.0.1:5000/predict \
+-H "Content-Type: application/json" \
+-d '{
+  "cpu_usage": 55.0,
+  "memory_usage": 60.0,
+  "network_traffic": 250.0,
+  "power_consumption": 150.0,
+  "num_executed_instructions": 7000,
+  "execution_time": 50.0,
+  "hour": 14,
+  "day": 12,
+  "weekday": 2,
+  "task_type": "compute",
+  "task_status": "completed"
+}'
+
+'''
